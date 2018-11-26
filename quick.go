@@ -1,15 +1,13 @@
 package main
 
-import "fmt"
 
-
-func main() {
-	var sortArray  =[]int{41, 24, 76, 11, 45, 64, 21, 69, 19, 36}
-	Quicksort(sortArray,0,len(sortArray)-1)
-	for _,v:=range sortArray{
-		fmt.Print(v,"  ")
-	}
-}
+//func main() {
+//	var sortArray  =[]int{41, 24, 76, 11, 45, 64, 21, 69, 19, 36}
+//	Quicksort(sortArray,0,len(sortArray)-1)
+//	for _,v:=range sortArray{
+//		fmt.Print(v,"  ")
+//	}
+//}
 func Quicksort(array []int,left,right int)  {
 	if left<right{
 		key:=partition(array,left,right)
